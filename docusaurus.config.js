@@ -3,13 +3,14 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const { config } = require("./src/config");
 
 /** @type {import('@docusaurus/types').Config} */
-const config = {
+const docussaurusConfig = {
   title: "TheBugging",
   tagline:
     "TheBugging is a complete SaaS platform that offers error logging helping identifying and fixing production bugs in Real-World Web applications",
-  url: "https://www.thebugging.com/",
+  url: config.landingURL,
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -76,7 +77,7 @@ const config = {
             position: "right",
           },
           {
-            href: "https://app.thebugging.com/",
+            href: config.baseURL,
             label: "Platform",
             position: "right",
           },
@@ -99,7 +100,7 @@ const config = {
             items: [
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/the-bugging",
               },
             ],
           },
@@ -108,11 +109,11 @@ const config = {
             items: [
               {
                 label: "TheBugging",
-                to: "https://www.thebugging.com/",
+                to: config.landingURL,
               },
               {
                 label: "TheBugging - Platform",
-                to: "https://app.thebugging.com/",
+                to: config.baseURL,
               },
             ],
           },
@@ -126,4 +127,4 @@ const config = {
     }),
 };
 
-module.exports = config;
+module.exports = docussaurusConfig;
