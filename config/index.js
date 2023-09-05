@@ -1,0 +1,11 @@
+const NEXT_PUBLIC_BASE_APP_URL = process.env.NEXT_PUBLIC_BASE_APP_URL || "";
+const NEXT_PUBLIC_PROJECT_KEY = process.env.NEXT_PUBLIC_PROJECT_KEY || "";
+const NEXT_PUBLIC_LANDING_URL = process.env.NEXT_PUBLIC_LANDING_URL || "";
+const NEXT_PUBLIC_DOCS_URL = process.env.NEXT_PUBLIC_DOCS_URL || "";
+
+module.exports = Object.freeze({
+  baseURL: NEXT_PUBLIC_BASE_APP_URL,
+  projectKey: NEXT_PUBLIC_PROJECT_KEY,
+  landingURL: NEXT_PUBLIC_LANDING_URL,
+  docsURL: NEXT_PUBLIC_DOCS_URL,
+});
