@@ -12,7 +12,8 @@ const configVars = require("./config");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'TheBugging',
-  tagline: 'Dinosaurs are cool',
+  tagline:
+    "TheBugging is a complete SaaS platform that offers error logging helping identifying and fixing production bugs in Real-World Web applications",
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
